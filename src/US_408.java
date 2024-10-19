@@ -40,6 +40,7 @@ public class US_408 extends BaseDriver {
 
         List<String> patientsId = new ArrayList<>();
         boolean isNextPageAvailable = true;
+
         do {
             for (WebElement ids : element.IDs) {
                 String patientsIdStr = (ids.getText());

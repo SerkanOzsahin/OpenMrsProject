@@ -10,7 +10,7 @@ import java.util.List;
 public class US_403_408_409_410_POM {
 
     public US_403_408_409_410_POM() {
-        PageFactory.initElements(BaseDriver.driver,this);
+        PageFactory.initElements(BaseDriver.driver, this);
     }
 
     @FindBy(css = "[class='gt-current-lang']")
@@ -102,5 +102,4 @@ public class US_403_408_409_410_POM {
 
     @FindBy(id = "patient-search-results-table_info")
     public WebElement searchResultTable;
-
 }

@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class US_406 extends BaseDriver {
+
     @Test(groups = "Regression Test")
     public void patientSearchInPatientListNegative() {
         US_402_405_406_POM element = new US_402_405_406_POM();
@@ -28,6 +29,7 @@ public class US_406 extends BaseDriver {
             wait.until(ExpectedConditions.elementToBeClickable(element.logInButton));
             element.logInButton.click();
         }
+
         wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("homePageURL")));
         Assert.assertTrue(element.loginControl.getText().contains("Logged in as Super User"));
 

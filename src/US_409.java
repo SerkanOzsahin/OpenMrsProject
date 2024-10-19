@@ -43,6 +43,7 @@ public class US_409 extends BaseDriver {
 
         wait.until(ExpectedConditions.visibilityOf(element.patientSearchResultTable));
         WebElement[] IDs = {element.patientId1, element.patientId2};
+
         for (int i = 0; i < element.IDs.size(); i++) {
             wait.until(ExpectedConditions.visibilityOf(element.IDs.get(i)));
             IDs[i].sendKeys(element.IDs.get(i).getText());

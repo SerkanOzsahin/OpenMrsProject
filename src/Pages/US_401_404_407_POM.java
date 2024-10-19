@@ -116,8 +116,8 @@ public class US_401_404_407_POM {
     public WebElement reasonBox;
 
     @FindBy(xpath = "//div[@tabindex='-1']//button")
-    public WebElement  buttonConfirm;
+    public WebElement buttonConfirm;
 
     @FindBy(css = "[class='dataTables_empty']")
-    public WebElement  noPatientsFound;
+    public WebElement noPatientsFound;
 }

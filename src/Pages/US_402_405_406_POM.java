@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class US_402_405_406_POM{
+public class US_402_405_406_POM {
 
     public US_402_405_406_POM() {
         PageFactory.initElements(BaseDriver.driver, this);
@@ -80,5 +80,5 @@ public class US_402_405_406_POM{
     public WebElement searchBox;
 
     @FindBy(xpath = "//*[.='No matching records found']")
-    public WebElement  noPatientsFound;
+    public WebElement noPatientsFound;
 }

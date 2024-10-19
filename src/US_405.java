@@ -25,7 +25,6 @@ public class US_405 extends BaseDriver {
                 wait.until(ExpectedConditions.visibilityOf(element.selectEnglish));
                 MyFunc.jsClick(element.selectEnglish);
             }
-
         } while (!element.languageButton.getText().contains("EN"));
 
         wait.until(ExpectedConditions.elementToBeClickable(element.demoButton));

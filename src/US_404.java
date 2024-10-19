@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class US_404 extends BaseDriver {
+
     public String patientID;
 
     @Test(groups = "Regression Test")
